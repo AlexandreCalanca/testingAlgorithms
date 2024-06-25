@@ -3,23 +3,29 @@ import java.util.Scanner;
 
 public class ExercicioTerreno {
 	public static void main(String[] args) {
-	Locale.setDefault(Locale.US);
-	Scanner sc = new Scanner(System.in);
-	//Largura do Terreno
-	System.out.printf("Digite a largura do terreno: ");
-	double larg = sc.nextDouble();
-	//Comprimento do Terreno
-	System.out.printf("Digite o comprimento do terreno: ");
-	double comp = sc.nextDouble();
-	sc.nextDouble();
-	//Valor do M2 do Terreno
-	System.out.printf("Digite o valor do m2 do terreno: ");
-	double valm2 = sc.nextDouble();
-	//Processamento dos valores
-	double area = larg * comp;
-	double preco = area * valm2;
-	System.out.printf("Area do terreno: %2.%fn", area);
-	System.out.printf("Valor do terreno: %2.%fn", preco);
-	sc.close();
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double largura, comprimento, valor, area, preco;
+
+	    System.out.print("Digite a largura do terreno: ");
+	    largura = sc.nextDouble();
+
+	    System.out.print("Digite o comprimento do terreno: ");
+	    comprimento = sc.nextDouble();
+
+	    System.out.print("Digite o valor do metro quadrado: ");
+	    valor = sc.nextDouble();
+
+	    area = largura * comprimento;
+
+	    System.out.printf("Area do terreno = %.2f\n", area);
+
+	    preco = area * valor;
+
+	    System.out.printf("Preco do terreno = %.2f\n", preco);
+
+		sc.close();
 	}
 }
