@@ -4,16 +4,17 @@ import java.util.Locale;
 
 public class ExercicioRetangulo {
 	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
 		//Variaveis
 		double baseRet, altRet, area, peri, diag;
 		
 		//Programa
-		System.out.print("Base do retangulo: ");
+		System.out.printf("Base do retangulo: ");
 		baseRet = sc.nextDouble();
 		
-		System.out.print("Altura do retangulo: ");
+		System.out.printf("Altura do retangulo: ");
 		altRet = sc.nextDouble();
 		
 		area = baseRet * altRet;
@@ -25,6 +26,8 @@ public class ExercicioRetangulo {
 		diag = Math.pow(baseRet, 2) + Math.pow(altRet, 2);
 		diag = Math.sqrt(diag);
 		System.out.printf("Diagonal do RETANGULO: %.4f", diag);
+		
+		sc.close();
 		
 		
 		
