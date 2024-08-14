@@ -25,9 +25,6 @@ public class ExercicioTroco {
 		troco = (dinRec - total);
 		System.out.printf("Troco: %.2f", troco);	
 		
-		
-		
-		
 		sc.close();
 	}
 
